@@ -1,0 +1,103 @@
+.coffees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--brownL), var(--brownLL));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.coffee-header h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.coffee-header p {
+  font-size: 1.06rem;
+  text-align: center;
+  max-width: 60rem;
+  line-height: 150%;
+}
+
+.con-coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.con-coffee button {
+  padding: 0.8rem 1.6rem;
+  background-color: var(--brownL);
+  border: 1px solid var(--brownL);
+  color: var(--white);
+  margin-top: 1rem;
+  transition: 0.4s;
+}
+.con-coffee button:hover {
+  color: var(--brownL);
+  background-color: transparent;
+}
+
+.con-row-coffee {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.coffee-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  transition: 0.4s;
+}
+.coffee-info h3 {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--black);
+  margin-top: 1rem;
+  transition: 0.4s;
+}
+.coffee-info p {
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: 14rem;
+}
+
+.coffee-info:hover {
+  cursor: pointer;
+}
+.coffee-info:hover h3 {
+  color: var(--white);
+}
+
+.coffee-img {
+  overflow: hidden;
+  min-width: 275px;
+  max-height: 260px;
+}
+
+.coffee-img img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .con-coffee {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .con-row-coffee {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=cafes.css.map */
